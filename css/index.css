@@ -66,22 +66,12 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-a { text-decoration: none; }
-
-body {
-	max-width: 876px;
-	margin: 0 auto;
-}
-
-html body header nav {
-	margin-top: 35px;
-	vertical-align: top;
-	display: flex;
-	justify-content: space-between;
-	align-content: flex-end;
-}
-
-@media(max-width: 750px){
+@media(max-width: 500px){
+    body {
+        max-width: 500px;
+        justify-content: center;
+        margin: 0px auto;
+    }
     header nav {
         flex-direction: column;
         align-items: center;
@@ -103,21 +93,115 @@ html body header nav {
 
     header nav img {
         order: -1;
-        max-width: 183px;
+      	width: 183px;
         margin: 10px;
 
-    }
-
-    .center .slogan .text-block {
-        display: flex;
-        flex-direction: column;
-        
     }
      
     .center img {
         display: none;
     }
+
+    .cente {
+        justify-content: center;
+        max-width: 100%;
+        align-items: center;
+        margin-top: -70px;
+        padding: 0px;
+    }
+
+    .main-content {
+		max-width: 800px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	
+	.main-content img {
+		width: 100%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	.contact {
+		width: 100%;
+		margin: 0 5% 0 5%;
+		padding: 0px;
+	}
 }
+
+@media(max-width: 800px){
+	header, .center, .main-content, .contact {
+		margin: 5%;
+	}
+
+	header nav img {
+		order: -1;
+		max-width: 183px;
+		margin: 0 225px 50px 225px;
+		
+    }
+
+	header nav {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	header nav a {
+		flex-direction: row;
+	}
+	.center img {
+        display: none;
+    }
+
+    .center {
+        justify-content: center;
+        max-width: 100%;
+        align-items: center;
+		margin-top: -80px;
+        padding: 0px;
+	}
+
+	.main-content {
+		display: flex; 
+		flex-direction: row;
+	}
+	.group1 {
+		max-width: 46%;
+	}
+
+	.group2 {
+		width: 29%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+
+	
+	
+
+}
+
+
+
+a { text-decoration: none; }
+
+body {
+	max-width: 876px;
+	margin: 0 auto;
+}
+
+h1  {
+	font-size: 70px;
+}
+
+h2 {
+	font-size:20px
+}
+
 
 html body header nav a {
 	margin-top: 10px;
@@ -134,13 +218,17 @@ html body header nav a {
 	padding-bottom: 25px;
 }
 
-h1  {
-	font-size: 70px;
+
+html body header nav {
+	margin-top: 35px;
+	vertical-align: top;
+	display: flex;
+	justify-content: space-between;
+	align-content: flex-end;
 }
 
-h2 {
-	font-size:20px
-}
+
+
 
 .image {
 	margin-top: 65px;
@@ -190,21 +278,12 @@ html body .section2 {
 	margin-bottom: 40px;	
 }
 
-html body .section3 {
-	width: 266px;
-	margin-right: 25px;
-}
-html body .section4 {
-	width: 266px;
-	margin-right: 25px;
-}
-html body .section5{
-	width: 266px;
-}
 .group2 {
 	text-align: left;
 	padding-bottom: 20px;
 	margin-top:35px;
+	max-width: 266px;
+	margin-right: 25px;
 }
 
 footer {
